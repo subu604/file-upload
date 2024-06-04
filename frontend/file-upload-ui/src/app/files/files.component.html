@@ -1,0 +1,28 @@
+<div class="container">
+  <h2>Retrieve File</h2>
+  <form (ngSubmit)="getFile()">
+    <div>
+      <label for="path">Path:</label>
+      <input type="text" id="path" [(ngModel)]="path" name="path" required />
+    </div>
+    <div>
+      <label for="filename">Filename:</label>
+      <input
+        type="text"
+        id="filename"
+        [(ngModel)]="filename"
+        name="filename"
+        required
+      />
+    </div>
+    <div>
+      <label for="version">Version (optional):</label>
+      <input type="number" id="version" [(ngModel)]="version" name="version" />
+    </div>
+    <button type="submit">Get File</button>
+  </form>
+  <div *ngIf="fileContent">
+    <h3>File Content:</h3>
+    <pre>{{ fileContent }}</pre>
+  </div>
+</div>
