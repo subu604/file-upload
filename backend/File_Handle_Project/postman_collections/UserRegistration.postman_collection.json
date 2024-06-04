@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "273c9caf-7037-49aa-8b33-5f3dca59a437",
+		"name": "UserRegistration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35983524"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/register/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "testuser",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "testpassword",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/register/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"register",
+						""
+					]
+				},
+				"description": "User Registeration"
+			},
+			"response": []
+		}
+	]
+}
